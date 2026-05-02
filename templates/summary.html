@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% block title %}家庭關係的總結{% endblock %} {% block
+content %}
+<div class="container my-5">
+  <div
+    class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5"
+  >
+    <img
+      src="{{ url_for('static', filename='assets/images/summary.png') }}"
+      alt="Family Relationship Summary"
+      class="img-fluid w-100"
+    />
+    <h1 class="text-body-emphasis p-3">家庭關係的總結</h1>
+
+    <blockquote class="col-lg-12 mx-auto text-muted">
+      <p class="mb-2 fs-3 text-start">
+        愛是<strong>恆久忍耐</strong>，又有<strong>恩慈</strong>；愛是<strong>不嫉妒</strong>；愛是<strong>不自誇</strong>，<strong>不張狂</strong>，<br />
+        不做害羞的事，<strong>不求自己的益處</strong>，<strong>不輕易發怒</strong>，<strong>不計算人的惡</strong>，<br />
+        不喜歡不義，只喜歡真理；<strong>凡事包容</strong>，<strong>凡事相信</strong>，<strong>凡事盼望</strong>，<strong>凡事忍耐</strong>。<br />
+        <strong>愛是永不止息。</strong><br />
+      </p>
+      <footer class="blockquote-footer mt-2 fs-4 text-end">
+        哥林多前書 13:4-8
+      </footer>
+    </blockquote>
+
+    <hr class="my-4" />
+
+    <h2 class="text-start">總結</h2>
+
+    <div class="col-lg-12 mx-auto mb-4 fs-4 text-start">
+      <p>
+        聖經中關於家庭關係的教導，無論是<strong>夫妻相處</strong>、<strong>父母對待子女</strong>、<strong>子女對待父母</strong>，或是<strong>兄弟姊妹相處</strong>，都可以用「愛」來總結。
+        這愛不是只停留在感覺或言語上，而是在日常生活中以忍耐、恩慈、謙卑、饒恕和責任表現出來。
+      </p>
+
+      <ul>
+        <li>
+          <strong>在夫妻關係中：</strong>
+          愛是不自私、不求自己的益處，而是願意彼此委身、彼此尊重、彼此扶持。
+        </li>
+        <li>
+          <strong>在父母與子女關係中：</strong>
+          愛是恆久忍耐，又有恩慈。父母以主的教訓養育兒女，子女以孝敬和聽從回應父母。
+        </li>
+        <li>
+          <strong>在管教與教導中：</strong>
+          愛不是放任，也不是傷害；愛是在真理中引導，在恩慈中糾正，在盼望中陪伴。
+        </li>
+        <li>
+          <strong>在兄弟姊妹相處中：</strong>
+          愛是不嫉妒、不自誇、不張狂，而是謙卑相待、彼此包容、彼此饒恕。
+        </li>
+        <li>
+          <strong>在衝突和誤會中：</strong>
+          愛是不輕易發怒，不計算人的惡；願意放下怨恨，尋求和好。
+        </li>
+        <li>
+          <strong>在家庭生活中：</strong>
+          愛是凡事包容、凡事相信、凡事盼望、凡事忍耐，使家人成為彼此的安慰和幫助。
+        </li>
+      </ul>
+
+      <p>
+        因此，一個合神心意的家庭，不是沒有衝突或軟弱，而是願意讓上帝的愛成為家庭的根基。
+        當家人彼此以愛相待，就能在尊重中建立關係，在饒恕中恢復和睦，在真理中一同成長。
+      </p>
+    </div>
+    <hr class="my-4" />
+    <a
+      href="{{ url_for('index') }}"
+      class="btn btn-primary same-width-btn btn-lg px-5 py-3 mb-5"
+      role="button"
+    >
+      首頁
+    </a>
+  </div>
+</div>
+{% endblock %}

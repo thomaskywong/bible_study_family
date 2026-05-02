@@ -1,0 +1,113 @@
+{% extends 'base.html' %} {% block title %}父母對待子女{% endblock %} {% block
+content %}
+<div class="container my-5">
+  <div
+    class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5"
+  >
+    <img
+      src="{{ url_for('static', filename='assets/images/parent_child.png') }}"
+      alt="Parent-Child Relationship"
+      class="img-fluid w-100"
+    />
+    <h1 class="text-body-emphasis p-3">父母對待子女</h1>
+    <blockquote class="col-lg-12 mx-auto text-muted">
+      <p class="mb-2 fs-3 text-start">
+        <strong>教養孩童，使他走當行的道</strong>，就是到老他也不偏離。<br />
+      </p>
+      <footer class="blockquote-footer mt-2 fs-4 text-end">箴言 22:6</footer>
+    </blockquote>
+
+    <hr class="my-4" />
+    <blockquote class="col-lg-12 mx-auto text-muted">
+      <p class="mb-2 fs-3 text-start">
+        你們<strong>作父親的，不要惹兒女的氣</strong>，只要<strong>照著主的教訓和警戒養育他們</strong>。<br />
+      </p>
+      <footer class="blockquote-footer mt-2 fs-4 text-end">以弗所書 6:4</footer>
+    </blockquote>
+
+    <hr class="my-4" />
+    <blockquote class="col-lg-12 mx-auto text-muted">
+      <p class="mb-2 fs-3 text-start">
+        你們<strong>作父親的，不要惹兒女的氣</strong>，恐怕他們<strong>失了志氣</strong>。<br />
+      </p>
+      <footer class="blockquote-footer mt-2 fs-4 text-end">
+        歌羅西書 3:21
+      </footer>
+    </blockquote>
+
+    <hr class="my-4" />
+    <blockquote class="col-lg-12 mx-auto text-muted">
+      <p class="mb-2 fs-3 text-start">
+        不忍用杖打兒子的，是恨惡他；<strong>疼愛兒子的，隨時管教。</strong
+        ><br />
+      </p>
+      <footer class="blockquote-footer mt-2 fs-4 text-end">箴言 13:24</footer>
+    </blockquote>
+
+    <hr class="my-4" />
+    <blockquote class="col-lg-12 mx-auto text-muted">
+      <p class="mb-2 fs-3 text-start">
+        趁有指望，<strong>管教你的兒子；你的心不可任他死亡。</strong><br />
+      </p>
+      <footer class="blockquote-footer mt-2 fs-4 text-end">箴言 19:18</footer>
+    </blockquote>
+
+    <hr class="my-4" />
+    <h2 class="text-start">重點</h2>
+    <div class="col-lg-12 mx-auto mb-4 fs-4 text-start">
+      <ul>
+        <li>
+          <strong>教養兒女走當行的道：</strong>
+          父母有責任從小引導兒女走合宜、正直、敬畏上帝的道路，使他們一生有正確的方向。
+        </li>
+        <li>
+          <strong>照著主的教訓和警戒養育兒女：</strong>
+          父母不只是照自己的想法教導兒女，而是要按照主的真理、教訓和提醒來養育他們。
+        </li>
+        <li>
+          <strong>不可惹兒女的氣：</strong>
+          父母對待兒女時，不應用暴怒、羞辱、苛刻、偏心或不合理的方式管教，免得傷害兒女的心。
+        </li>
+        <li>
+          <strong>不要使兒女失了志氣：</strong>
+          父母的話語和態度應當帶來引導與建立，而不是打擊、壓制或使兒女灰心喪志。
+        </li>
+        <li>
+          <strong>疼愛兒女就要管教兒女：</strong>
+          真正的愛不是放任不管，而是在兒女偏離正道時，及時給予合宜的教導、提醒和糾正。
+        </li>
+        <li>
+          <strong>趁有指望時及早管教：</strong>
+          父母應在兒女還可受教、可塑造的時候及早引導，不可任由他們走向錯誤和危險。
+        </li>
+        <li>
+          <strong>管教的目的不是傷害，而是挽回生命：</strong>
+          聖經所說的管教，是出於愛與責任，為要保護兒女，使他們遠離罪惡和敗壞的道路。
+        </li>
+      </ul>
+    </div>
+    <hr class="my-4" />
+    <a
+      href="{{ url_for('index') }}"
+      class="btn btn-secondary same-width-btn btn-lg px-5 py-3 mb-5"
+      role="button"
+    >
+      首頁
+    </a>
+    <a
+      href="{{ url_for('child_parent') }}"
+      class="btn btn-secondary same-width-btn btn-lg px-5 py-3 mb-5"
+      role="button"
+    >
+      子女對父母
+    </a>
+    <a
+      href="{{ url_for('sibling') }}"
+      class="btn btn-primary same-width-btn btn-lg px-5 py-3 mb-5"
+      role="button"
+    >
+      弟兄姊妹相處
+    </a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block title %}聖經中的家庭關係{% endblock %} {%
+block content %}
+<div class="container my-5">
+  <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <img
+      src="{{ url_for('static', filename='assets/images/happy_family.png') }}"
+      alt="Happy Family"
+      class="img-fluid w-100 image-bar-img"
+    />
+    <h1 class="text-body-emphasis p-3">聖經中的家庭關係：愛、尊重與同行</h1>
+    <blockquote class="col-lg-8 mx-auto fs-5 text-muted">
+      <p class="mb-2 fs-2">「至於我和我家，我們必定事奉耶和華。」</p>
+      <footer class="blockquote-footer mt-2 fs-4">約書亞記 24:15</footer>
+    </blockquote>
+    <hr class="my-4" />
+    <a
+      href="{{ url_for('origin') }}"
+      class="btn btn-primary same-width-btn btn-lg px-5 py-3 mb-5"
+      role="button"
+    >
+      家庭的起源
+    </a>
+  </div>
+</div>
+{% endblock %}

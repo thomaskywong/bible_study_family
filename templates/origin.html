@@ -1,0 +1,68 @@
+{% extends 'base.html' %} {% block title %}聖經中的家庭相處之道{% endblock %} {%
+block content %}
+<div class="container my-5">
+  <div
+    class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5"
+  >
+    <img
+      src="{{ url_for('static', filename='assets/images/origin.png') }}"
+      alt="Origin of Family"
+      class="img-fluid w-100 image-bar-img"
+    />
+    <h1 class="text-body-emphasis p-3">家庭的起源</h1>
+    <blockquote class="col-lg-12 mx-auto text-muted">
+      <p class="mb-2 fs-3 text-start">
+        上帝說：「<strong>我們要照著我們的形像、按著我們的樣式造人</strong>，使他們管理海裏的魚、空中的鳥、地上的牲畜，和全地，並地上所爬的一切昆蟲。」<br />
+        上帝就照著自己的形像造人，乃是<strong>照著他的形像造男造女</strong>。<br />
+        上帝就賜福給他們，又對他們說：「<strong>要生養眾多，遍滿地面</strong>，治理這地，也要管理海裏的魚、空中的鳥，和地上各樣行動的活物。」<br />
+        上帝說：「看哪，我將遍地上一切結種子的菜蔬和一切樹上所結有核的果子全賜給你們作食物。<br />
+        至於地上的走獸和空中的飛鳥，並各樣爬在地上有生命的物，我將青草賜給牠們作食物。」事就這樣成了。<br />
+        上帝看著<strong>一切所造的都甚好</strong>。有晚上，有早晨，是第六日。」<br />
+      </p>
+      <footer class="blockquote-footer mt-2 fs-4 text-end">
+        創世記 1：26-31
+      </footer>
+    </blockquote>
+
+    <hr class="my-4" />
+
+    <h2 class="text-start">重點</h2>
+
+    <div class="col-lg-12 mx-auto mb-4 fs-3 text-start">
+      <ul>
+        <li>
+          <strong>人是照著上帝的形像被造：</strong>
+          每一個人都有從上帝而來的尊嚴、價值和意義，不應被輕看或傷害。
+        </li>
+        <li>
+          <strong>男女同樣有尊貴的地位：</strong>
+          聖經說上帝照著祂的形像造男造女，表示男女在上帝面前都同樣寶貴。
+        </li>
+        <li>
+          <strong>家庭和生命是上帝賜福的安排：</strong>
+          上帝賜福給人，吩咐他們生養眾多，顯明家庭、婚姻和生命的延續都有上帝的心意。
+        </li>
+        <li>
+          <strong>上帝的創造本是美好的：</strong>
+          上帝看祂一切所造的都甚好，提醒我們要珍惜生命、家庭和整個受造界。
+        </li>
+      </ul>
+    </div>
+    <hr class="my-4" />
+    <a
+      href="{{ url_for('index') }}"
+      class="btn btn-secondary same-width-btn btn-lg px-5 py-3 mb-5"
+      role="button"
+    >
+      首頁
+    </a>
+    <a
+      href="{{ url_for('spouse') }}"
+      class="btn btn-primary same-width-btn btn-lg px-5 py-3 mb-5"
+      role="button"
+    >
+      夫妻關係
+    </a>
+  </div>
+</div>
+{% endblock %}

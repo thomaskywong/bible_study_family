@@ -1,0 +1,9 @@
+  .same-width-btn {
+    width: 220px;
+  }
+
+  .image-bar-img {
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
